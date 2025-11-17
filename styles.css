@@ -1,69 +1,111 @@
+/* GLOBAL */
 body {
-    background-color: #0a1a0a;
-    color: #d0ffd0;
+    background-color: #061a0f;
+    color: #c8ffd9;
     margin: 0;
     font-family: "Courier New", monospace;
+    overflow-x: hidden;
 }
 
+/* HEADER */
 header {
-    background: #0f2a0f;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-nav a {
-    margin-left: 20px;
-    color: #9aff9a;
-    text-decoration: none;
-}
-nav a:hover, .active {
-    color: white;
+    background: rgba(10, 40, 20, 0.8);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 0 20px #003300;
+    position: relative;
+    z-index: 10;
 }
 
-.container {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
+header h1 {
+    font-size: 45px;
+    margin: 0;
+    letter-spacing: 4px;
+    color: #9affbc;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 25px;
+    font-size: 22px;
+    color: #b9ffdb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ff99;
+}
+
+/* MAIN TITLE ON LANDING */
+.main-section {
+    text-align: center;
+    margin-top: 8vh;
+    position: relative;
+    z-index: 5;
 }
 
 .main-title {
-    text-align: center;
-    font-size: 28px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #adffcc;
 }
 
+.subtitle {
+    font-size: 22px;
+    opacity: 0.85;
+}
+
+/* BUTTONS */
 .button-area {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    gap: 35px;
+    margin-top: 60px;
 }
+
 .main-btn {
-    background: #003300;
-    border: 1px solid #00ff00;
-    padding: 15px 20px;
-    margin: 0 20px;
-    font-size: 20px;
-    color: #afffaf;
+    background: rgba(0, 50, 20, 0.7);
+    border: 1px solid #00ff99;
+    padding: 18px 28px;
+    font-size: 22px;
+    border-radius: 12px;
+    color: #b8ffda;
     text-decoration: none;
+    transition: 0.25s ease;
+    backdrop-filter: blur(3px);
 }
+
 .main-btn:hover {
-    background: #005000;
+    background: rgba(0, 70, 30, 0.9);
+    box-shadow: 0 0 15px #00ff99;
+    transform: translateY(-4px);
 }
 
+/* CONTENT CONTAINERS */
+.container {
+    background: rgba(0, 40, 20, 0.55);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #003f2e inset;
+    margin: 60px auto;
+    width: 85%;
+    backdrop-filter: blur(4px);
+}
+
+/* FOOTER */
 footer {
-    background: #0f2a0f;
+    background: rgba(8, 30, 15, 0.9);
     text-align: center;
-    padding: 12px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    background: #001a00;
-    color: #aaffaa;
-    border: 1px solid #00ff00;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    color: #b9ffd4;
+    font-size: 15px;
+    margin-top: 40px;
 }
